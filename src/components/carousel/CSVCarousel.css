@@ -1,0 +1,48 @@
+.csv-carousel-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    width: 700px;  /* Fixed width for carousel container */
+    margin: auto;
+    position: relative;
+}
+
+.carousel-nav {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #003366; /* Dark blue color */
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.carousel-nav:hover {
+    color: #00509E; /* Change color on hover */
+}
+
+.carousel-nav.left {
+    left: -2rem;
+}
+
+.carousel-nav.right {
+    right: -2rem;
+}
+
+.scroll-container {
+    width: 100%;       /* Use full width */
+    max-width: 600px;  /* Maximum width for table */
+    height: 300px;     /* Fixed height for table scroll container */
+    overflow: auto;    /* Enables scrolling inside the container */
+}
+
+.current-file-name {
+    font-size: 20px; /* Increase font size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 10px; /* Space below the file name */
+    color: #003366; /* Dark blue color */
+}

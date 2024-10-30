@@ -1,0 +1,26 @@
+.csv-file-list {
+    background-color: #001f3f; /* Dark blue color */
+    color: white;              /* White text for contrast */
+    padding: 10px;             /* Padding for better aesthetics */
+    width: 200px;              /* Fixed width for the file list */
+    height: 100vh;             /* Full viewport height */
+    overflow-y: auto;          /* Vertical scroll if needed */
+    border-right: 2px solid #ccc; /* Right border for separation */
+  }
+  
+  .csv-file-header {
+    font-size: 1.5rem;         /* Header font size */
+    margin-bottom: 10px;       /* Space below the header */
+    font-weight: bold;         /* Bold header */
+  }
+  
+  .csv-file-item {
+    cursor: pointer;           /* Pointer cursor on hover */
+    padding: 5px;             /* Padding for each item */
+    border-radius: 4px;       /* Rounded corners */
+  }
+  
+  .csv-file-item:hover {
+    background-color: #0056b3; /* Slightly lighter blue on hover */
+  }
+  

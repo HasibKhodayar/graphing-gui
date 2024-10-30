@@ -1,0 +1,10 @@
+.header-selector {
+    padding: 10px; /* Add padding around the selector */
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .header-selector h4 {
+    margin-bottom: 10px; /* Space below the headers */
+  }
+  

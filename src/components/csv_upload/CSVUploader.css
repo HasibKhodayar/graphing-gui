@@ -1,0 +1,32 @@
+.csv-uploader {
+    text-align: center;
+    margin-bottom: 20px; /* Space between uploader and carousel */
+  }
+  
+  .upload-area {
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    border: 2px dashed #007bff; /* Dotted border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 40px; /* Inner spacing */
+    background-color: #f8f9fa; /* Light background */
+    color: #6c757d; /* Text color */
+    cursor: pointer; /* Pointer cursor for the label */
+    transition: background-color 0.3s; /* Smooth background transition */
+    height: 200px; /* Set a specific height for the area */
+    width: 100%; /* Full width of the container */
+    max-width: 1000px; /* Max width for the upload area */
+    margin: 0 auto; /* Center the upload area */
+  }
+  
+  .upload-area:hover {
+    background-color: #e9ecef; /* Change background on hover */
+  }
+  
+  .upload-area p {
+    margin-top: 10px; /* Space between icon and text */
+    font-size: 16px; /* Text size */
+  }
+  
