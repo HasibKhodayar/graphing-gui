@@ -1,4 +1,5 @@
 import React from 'react';
+import './CSVTable.css'
 
 const CSVTable = ({ data, onHeaderClick }) => {
   const displayedRows = data.slice(1, 16); // Show only 15 rows
