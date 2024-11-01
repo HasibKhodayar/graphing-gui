@@ -7,6 +7,7 @@
   background-color: #001f3f;
   display: flex;
   flex-direction: column; /* Stack items vertically */
+  overflow-x: auto;
 }
 
 .header-select {
@@ -30,6 +31,13 @@
 .y-header {
   font-weight: bold;
   color: white;
+}
+
+.x-header-item {
+  display: flex; /* Allow items to be in a flex container */
+  justify-content: space-between; /* Space between header name and button */
+  margin-left: 10px; /* Indent Y items */
+  margin-bottom: 5px; /* Space between Y items */
 }
 
 .y-header-items { /* New class for wrapping Y headers */

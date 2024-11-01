@@ -4,7 +4,7 @@ import CSVUploader from './components/csv_upload/CSVUploader';
 import FileList from './components/csv_upload/CSVFileList';
 import CSVCarousel from './components/carousel/CSVCarousel';
 import HeaderSelector from './components/HeaderSelector';
-import PlotGraph from './components/PlotGraph'; // Import the PlotGraph component
+import PlotGraph from './components/PlotGraph';
 import './App.css';
 
 function App() {
@@ -32,9 +32,9 @@ function App() {
 
   const currentCsvData = csvFiles[activeFileIndex]?.data || []; // Get data of the active CSV file
 
-  // Prepare xData and yData for plotting
-  const xData = xHeader ? currentCsvData.map(row => row[xHeader]) : [];
-  const yData = yHeaders.map(yHeader => currentCsvData.map(row => row[yHeader]));
+  // Extract X and Y data based on selected headers
+  const xData = currentCsvData.map(row => row[currentCsvData[0].indexOf(xHeader)]);
+  const yData = yHeaders.map(header => currentCsvData.map(row => row[currentCsvData[0].indexOf(header)]));
 
   return (
     <div className="d-flex">
@@ -61,8 +61,8 @@ function App() {
           </div>
         )}
         
-        {xData.length > 0 && yData.length > 0 && (
-          <PlotGraph xData={xData} yData={yData} />
+        {xHeader && yHeaders.length > 0 && (
+          <PlotGraph xData={xData} yData={yData} yHeaders={yHeaders} graphTitle={"Title"}/>
         )}
       </div>
     </div>
