@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/graphing-gui/static/css/main.334f3abf.css",
+    "main.js": "/graphing-gui/static/js/main.8c00ed9c.js",
+    "static/js/453.c3f78bf6.chunk.js": "/graphing-gui/static/js/453.c3f78bf6.chunk.js",
+    "index.html": "/graphing-gui/index.html",
+    "main.334f3abf.css.map": "/graphing-gui/static/css/main.334f3abf.css.map",
+    "main.8c00ed9c.js.map": "/graphing-gui/static/js/main.8c00ed9c.js.map",
+    "453.c3f78bf6.chunk.js.map": "/graphing-gui/static/js/453.c3f78bf6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.334f3abf.css",
+    "static/js/main.8c00ed9c.js"
+  ]
+}
